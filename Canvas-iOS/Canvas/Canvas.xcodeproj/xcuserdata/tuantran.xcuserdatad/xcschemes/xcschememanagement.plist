@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Canvas [Release].xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Canvas.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>CanvasKit1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>73</integer>
+		</dict>
+		<key>GradesWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>74</integer>
+		</dict>
+		<key>StudentUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>59</integer>
+		</dict>
+		<key>TechDebt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>72</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>
