@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="5Yb-K9-qQn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="5Yb-K9-qQn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -85,7 +85,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uvg-b7-8aP" kind="push" identifier="FindSchool" id="LE7-SH-5SN"/>
+                                    <action selector="customLoginAction:" destination="5Yb-K9-qQn" eventType="touchUpInside" id="sax-cJ-ism"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eln-Wg-hVk">
@@ -138,7 +138,7 @@
                     <connections>
                         <outlet property="bottomContainer" destination="H37-HX-EIG" id="yUq-hW-riE"/>
                         <outlet property="canvasNetworkButton" destination="eln-Wg-hVk" id="dXZ-74-8ok"/>
-                        <outlet property="customLoginButton" destination="OcW-eP-myo" id="e69-1c-0TN"/>
+                        <outlet property="customLoginButton" destination="zQQ-hy-gpK" id="TQx-mO-RxB"/>
                         <outlet property="findSchoolButton" destination="zQQ-hy-gpK" id="SMS-58-0nl"/>
                         <outlet property="forceCanvasLoginLabel" destination="7yY-o5-DSG" id="Dee-fv-HWV"/>
                         <outlet property="fullLogoImageView" destination="ccE-pU-Nuj" id="ZRj-BM-QHN"/>
@@ -227,7 +227,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="150.5"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="ue2-Oj-Efg">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="ue2-Oj-Efg">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="8"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
