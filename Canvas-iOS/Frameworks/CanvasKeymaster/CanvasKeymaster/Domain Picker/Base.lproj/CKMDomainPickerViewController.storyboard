@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Domain Picker View Controller-->
         <scene sceneID="G86-dF-xOz">
@@ -61,20 +67,6 @@
                                     <constraint firstItem="Kpj-4f-cdc" firstAttribute="top" secondItem="H37-HX-EIG" secondAttribute="top" id="n29-Za-Kgd"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="student-logomark" translatesAutoresizingMaskIntoConstraints="NO" id="1vm-R0-Psi">
-                                <rect key="frame" x="156" y="181.5" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="FK4-Ys-zjk"/>
-                                    <constraint firstAttribute="width" constant="64" id="xoG-ak-cct"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="student-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ccE-pU-Nuj">
-                                <rect key="frame" x="110" y="182" width="156" height="123"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="MBU-55-UeH"/>
-                                    <constraint firstAttribute="height" constant="123" id="iKo-lI-Da1"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQQ-hy-gpK">
                                 <rect key="frame" x="76.5" y="345" width="222" height="52"/>
                                 <color key="backgroundColor" red="0.0" green="0.55779391527175903" blue="0.8858979344367981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,16 +78,6 @@
                                 </state>
                                 <connections>
                                     <action selector="customLoginAction:" destination="5Yb-K9-qQn" eventType="touchUpInside" id="sax-cJ-ism"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eln-Wg-hVk">
-                                <rect key="frame" x="134" y="413" width="108" height="29"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="Canvas Network">
-                                    <color key="titleColor" red="0.45098039215686275" green="0.50588235294117645" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="logIntoCanvasNetwork" destination="5Yb-K9-qQn" eventType="touchUpInside" id="Mu8-Ay-KOr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canvas Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yY-o5-DSG">
@@ -111,6 +93,24 @@
                                     <action selector="customLoginAction:" destination="5Yb-K9-qQn" eventType="touchUpInside" id="ixi-9E-vzY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nI-r4-F8V">
+                                <rect key="frame" x="152" y="294" width="70.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="U9U-hs-bvt"/>
+                                    <constraint firstAttribute="width" constant="70.5" id="bEB-fE-Ewo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BP_Square_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1vm-R0-Psi">
+                                <rect key="frame" x="146" y="182" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="FK4-Ys-zjk"/>
+                                    <constraint firstAttribute="width" secondItem="1vm-R0-Psi" secondAttribute="height" multiplier="1:1" id="vZk-2H-Xjf"/>
+                                    <constraint firstAttribute="width" constant="83" id="xoG-ak-cct"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -120,28 +120,24 @@
                             <constraint firstAttribute="centerX" secondItem="1vm-R0-Psi" secondAttribute="centerX" id="CF8-nR-W9Z"/>
                             <constraint firstItem="7yY-o5-DSG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gDM-5n-uiy" secondAttribute="leadingMargin" constant="16" id="FfX-Xp-v2n"/>
                             <constraint firstItem="OcW-eP-myo" firstAttribute="centerY" secondItem="7yY-o5-DSG" secondAttribute="centerY" id="Gcf-XR-fLo"/>
-                            <constraint firstItem="zQQ-hy-gpK" firstAttribute="top" secondItem="ccE-pU-Nuj" secondAttribute="bottom" constant="40" id="OuW-Bf-cNo"/>
-                            <constraint firstItem="1vm-R0-Psi" firstAttribute="centerY" secondItem="gDM-5n-uiy" secondAttribute="centerY" priority="999" id="P2e-Pn-vw7"/>
+                            <constraint firstItem="zQQ-hy-gpK" firstAttribute="top" secondItem="3nI-r4-F8V" secondAttribute="bottom" constant="30" id="OVw-Bx-60E"/>
+                            <constraint firstItem="1vm-R0-Psi" firstAttribute="centerY" secondItem="gDM-5n-uiy" secondAttribute="centerY" priority="999" constant="-110" id="P2e-Pn-vw7"/>
                             <constraint firstItem="OcW-eP-myo" firstAttribute="leading" secondItem="gDM-5n-uiy" secondAttribute="leadingMargin" id="TOx-93-am3"/>
                             <constraint firstItem="H37-HX-EIG" firstAttribute="centerX" secondItem="gDM-5n-uiy" secondAttribute="centerX" id="bPh-kM-GCA"/>
-                            <constraint firstItem="eln-Wg-hVk" firstAttribute="centerX" secondItem="gDM-5n-uiy" secondAttribute="centerX" id="bUw-T7-gww"/>
                             <constraint firstItem="7yY-o5-DSG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OcW-eP-myo" secondAttribute="trailing" constant="8" id="cvY-7Y-FO5"/>
+                            <constraint firstItem="3nI-r4-F8V" firstAttribute="centerX" secondItem="gDM-5n-uiy" secondAttribute="centerX" id="d0M-fi-aVv"/>
                             <constraint firstItem="H37-HX-EIG" firstAttribute="leading" secondItem="gDM-5n-uiy" secondAttribute="leading" priority="750" id="e5Q-Ul-fEJ"/>
-                            <constraint firstItem="ccE-pU-Nuj" firstAttribute="centerY" secondItem="gDM-5n-uiy" secondAttribute="centerY" constant="-90" id="fOU-Sa-e1m"/>
-                            <constraint firstItem="1vm-R0-Psi" firstAttribute="centerY" secondItem="gDM-5n-uiy" secondAttribute="centerY" constant="-120" id="j9k-HU-dtW"/>
+                            <constraint firstItem="1vm-R0-Psi" firstAttribute="centerY" secondItem="gDM-5n-uiy" secondAttribute="centerY" constant="-110" id="j9k-HU-dtW"/>
                             <constraint firstAttribute="bottom" secondItem="H37-HX-EIG" secondAttribute="bottom" priority="750" id="jPY-DP-Mvq"/>
                             <constraint firstItem="7yY-o5-DSG" firstAttribute="top" secondItem="mR3-fi-QYq" secondAttribute="bottom" constant="20" id="s9P-dN-38J"/>
-                            <constraint firstItem="ccE-pU-Nuj" firstAttribute="centerX" secondItem="gDM-5n-uiy" secondAttribute="centerX" id="vUa-Gg-IUQ"/>
-                            <constraint firstItem="eln-Wg-hVk" firstAttribute="top" secondItem="zQQ-hy-gpK" secondAttribute="bottom" constant="16" id="wTr-q9-NyW"/>
+                            <constraint firstItem="3nI-r4-F8V" firstAttribute="top" secondItem="1vm-R0-Psi" secondAttribute="bottom" constant="29" id="w9k-zv-3Dc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomContainer" destination="H37-HX-EIG" id="yUq-hW-riE"/>
-                        <outlet property="canvasNetworkButton" destination="eln-Wg-hVk" id="dXZ-74-8ok"/>
                         <outlet property="customLoginButton" destination="zQQ-hy-gpK" id="TQx-mO-RxB"/>
                         <outlet property="findSchoolButton" destination="zQQ-hy-gpK" id="SMS-58-0nl"/>
                         <outlet property="forceCanvasLoginLabel" destination="7yY-o5-DSG" id="Dee-fv-HWV"/>
-                        <outlet property="fullLogoImageView" destination="ccE-pU-Nuj" id="ZRj-BM-QHN"/>
                         <outlet property="logoImageStageTwoConstraint" destination="j9k-HU-dtW" id="x0a-oY-Dkj"/>
                         <outlet property="logoImageView" destination="1vm-R0-Psi" id="Mnw-nO-1Gw"/>
                     </connections>
@@ -415,9 +411,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BP_Square_Logo.png" width="504" height="525"/>
         <image name="spinner-icon" width="80" height="80"/>
-        <image name="student-logo" width="156" height="123"/>
-        <image name="student-logomark" width="64" height="64"/>
         <image name="x-icon.png" width="18" height="18"/>
     </resources>
 </document>

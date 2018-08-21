@@ -111,7 +111,7 @@ static BOOL PerformedStartupAnimation = NO;
         self.preloadedAccountInfo = [NSDictionary dictionaryWithContentsOfURL:preloadedAccountInfoURL];
         self.customLoginButton.hidden = [self.preloadedAccountInfo[@"client_secret"] length] == 0;
         //[self.customLoginButton setTitle:self.preloadedAccountInfo[@"base_url"] forState:UIControlStateNormal];
-        [self.customLoginButton setTitle:@"BlitzPrepUniversity Login" forState:UIControlStateNormal];
+        [self.customLoginButton setTitle:@"Login" forState:UIControlStateNormal];
     }
 }
 

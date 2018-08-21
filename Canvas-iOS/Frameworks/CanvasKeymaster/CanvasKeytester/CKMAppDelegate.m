@@ -50,7 +50,8 @@
 
 - (UIImage *)logoForDomainPicker
 {
-    return [UIImage imageNamed:@"CanvasKeymaster"];
+    //return [UIImage imageNamed:@"CanvasKeymaster"];
+    return [UIImage imageNamed:@"BP_Square_Logo"];
 }
 
 - (UIView *)backgroundViewForDomainPicker

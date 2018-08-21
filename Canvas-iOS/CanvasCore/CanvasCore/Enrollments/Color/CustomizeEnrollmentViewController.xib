@@ -1,13 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomizeEnrollmentViewController" customModule="EnrollmentKit" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomizeEnrollmentViewController" customModule="CanvasCore" customModuleProvider="target">
             <connections>
                 <outlet property="header" destination="1sW-Lj-FXE" id="2ev-U9-Liy"/>
                 <outlet property="view" destination="SIz-lE-jv4" id="k7f-UT-DV2"/>
@@ -30,170 +34,170 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="SIz-lE-jv4">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sic-0K-tGf" userLabel="Red">
-                    <rect key="frame" x="20" y="54" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.93333333330000001" green="0.2666666667" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="20" y="54" width="129.5" height="129.5"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.2666666667" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="Uhm-OK-vYk"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b5-ij-ls4" userLabel="Pink">
-                    <rect key="frame" x="136" y="54" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.90588235289999997" green="0.1215686275" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="169.5" y="54" width="129.5" height="129.5"/>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.1215686275" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="t5P-U3-NIS"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d39-Op-U3t" userLabel="Indigo">
-                    <rect key="frame" x="484" y="54" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.27058823529999998" green="0.3294117647" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="618.5" y="54" width="129.5" height="129.5"/>
+                    <color key="backgroundColor" red="0.27058823529999998" green="0.3294117647" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="dWu-Xj-PYx"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKO-Qy-8fR" userLabel="Deep Purple">
-                    <rect key="frame" x="368" y="54" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.39607843139999999" green="0.28627450980000002" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="469" y="54" width="129.5" height="129.5"/>
+                    <color key="backgroundColor" red="0.39607843139999999" green="0.28627450980000002" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="8Gj-we-cpq"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dI-Uq-okc" userLabel="Purple">
-                    <rect key="frame" x="252" y="54" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.56078431370000004" green="0.24313725489999999" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="319" y="54" width="130" height="129.5"/>
+                    <color key="backgroundColor" red="0.56078431370000004" green="0.24313725489999999" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="M7W-Go-qSr"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngu-kG-v9B" userLabel="Blue">
-                    <rect key="frame" x="20" y="170" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.12549019610000001" green="0.51372549020000002" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="20" y="203.5" width="129.5" height="129.5"/>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.51372549020000002" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="oFm-vi-jQc"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUE-XK-GcC" userLabel="Light Blue">
-                    <rect key="frame" x="136" y="170" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.20784313730000001" green="0.64313725489999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="169.5" y="203.5" width="129.5" height="129.5"/>
+                    <color key="backgroundColor" red="0.20784313730000001" green="0.64313725489999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="NAc-1p-YAA"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRO-FF-tcu" userLabel="Green">
-                    <rect key="frame" x="484" y="170" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.26274509800000001" green="0.62745098040000002" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="618.5" y="203.5" width="129.5" height="129.5"/>
+                    <color key="backgroundColor" red="0.26274509800000001" green="0.62745098040000002" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="JqL-X4-SxP"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sca-Tm-SGu" userLabel="Teal">
-                    <rect key="frame" x="368" y="170" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="469" y="203.5" width="129.5" height="129.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="3yD-kg-YjA"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndz-Gz-MZE" userLabel="Cyan">
-                    <rect key="frame" x="252" y="170" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.035294117649999998" green="0.73725490199999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="319" y="203.5" width="130" height="129.5"/>
+                    <color key="backgroundColor" red="0.035294117649999998" green="0.73725490199999999" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="Hjm-MX-IRe"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bag-M2-NtU" userLabel="Light Green">
-                    <rect key="frame" x="20" y="286" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.5450980392" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="20" y="353" width="129.5" height="130"/>
+                    <color key="backgroundColor" red="0.5450980392" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="JNX-h5-xp3"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LE-X0-ox2" userLabel="Yellow">
-                    <rect key="frame" x="136" y="286" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.99215686270000003" green="0.75294117650000003" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="169.5" y="353" width="129.5" height="130"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.75294117650000003" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="qQo-yN-db0"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lh0-Nw-yxe" userLabel="Deep Orange">
-                    <rect key="frame" x="368" y="286" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.94117647059999998" green="0.34901960780000002" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="469" y="353" width="129.5" height="130"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.34901960780000002" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="SPo-7R-uvF"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCy-U1-SiR" userLabel="Orange">
-                    <rect key="frame" x="252" y="286" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.97254901959999995" green="0.59215686270000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="319" y="353" width="130" height="130"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.59215686270000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="c81-z1-Fjk"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiV-eU-LqS" userLabel="Light Pink">
-                    <rect key="frame" x="484" y="286" width="96" height="96"/>
-                    <color key="backgroundColor" red="0.94117647059999998" green="0.38431372549999998" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="618.5" y="353" width="129.5" height="130"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.38431372549999998" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="colorButtonTapped:" destination="-1" eventType="touchUpInside" id="AnE-9a-XAL"/>
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sW-Lj-FXE">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="34"/>
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="34"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jy-f9-5sR">
-                            <rect key="frame" x="20" y="7" width="560" height="20"/>
+                            <rect key="frame" x="20" y="7" width="728" height="20"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="0.92105263159999995" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.92105263471603394" green="0.92105263471603394" blue="0.92105263471603394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="2Jy-f9-5sR" secondAttribute="trailing" constant="20" id="J88-C8-g0t"/>
                         <constraint firstAttribute="centerY" secondItem="2Jy-f9-5sR" secondAttribute="centerY" id="auQ-t9-GVm"/>
@@ -203,7 +207,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="GiV-eU-LqS" firstAttribute="height" secondItem="Sca-Tm-SGu" secondAttribute="height" id="0S1-Hf-cNT"/>
                 <constraint firstItem="Sic-0K-tGf" firstAttribute="width" secondItem="PKO-Qy-8fR" secondAttribute="height" multiplier="1:1" id="1LF-PP-t9a"/>

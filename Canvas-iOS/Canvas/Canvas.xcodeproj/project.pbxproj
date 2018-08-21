@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004FF7CA212C4E6F0002DCB9 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 004FF7C9212C4E6F0002DCB9 /* LaunchImage.png */; };
 		03DAE3A2A1041407B354AC7C /* Pods_defaults_Canvas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35490A998ED46E2FC6020548 /* Pods_defaults_Canvas.framework */; };
 		1D39C6E1D2AC732040A7B9B7 /* Pods_defaults_TechDebt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB53AA8A26564C052A94E885 /* Pods_defaults_TechDebt.framework */; };
 		2C04B039207FE50500C6BD65 /* StudentUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C04B038207FE50500C6BD65 /* StudentUITestBase.swift */; };
@@ -711,6 +712,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		004FF7C9212C4E6F0002DCB9 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		00A2F765EB4E7EB599C4B4D3 /* Pods_CanvasKit1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanvasKit1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0140CE78FC9C4BBA05DC4CEE /* Pods-CanvasKit1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvasKit1.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CanvasKit1/Pods-CanvasKit1.debug.xcconfig"; sourceTree = "<group>"; };
 		0315F9A3A7DA736D9A792FE8 /* Pods-GradesWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradesWidget.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GradesWidget/Pods-GradesWidget.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2969,6 +2971,7 @@
 		CA035BCA2107B5430045DD81 /* BlitzPrep Images */ = {
 			isa = PBXGroup;
 			children = (
+				004FF7C9212C4E6F0002DCB9 /* LaunchImage.png */,
 				CA035BCB2107B5540045DD81 /* BP_Square_Logo.png */,
 			);
 			path = "BlitzPrep Images";
@@ -3427,6 +3430,7 @@
 			files = (
 				B177E7801E2F067400D7477D /* Localizable.strings in Resources */,
 				5EB46E051D21A75C00C859A4 /* CalendarSplitMonthViewController.storyboard in Resources */,
+				004FF7CA212C4E6F0002DCB9 /* LaunchImage.png in Resources */,
 				2C0CAD751DEF6C33008D90FA /* InfoPlist.strings in Resources */,
 				CA035BCC2107B5540045DD81 /* BP_Square_Logo.png in Resources */,
 				5EB46E001D21A75C00C859A4 /* CalendarDayListViewController.storyboard in Resources */,
